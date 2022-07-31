@@ -1,0 +1,122 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+
+    &__address {
+    color: var(--primary-bgc);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    }
+
+    &__contact {
+    color: var(--primary-bgc);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__inner {
+        @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+        }
+}
+    
+    &__form {
+    display: flex;
+    flex-direction: column;
+    }
+
+    &-field {
+        @media screen and (max-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+}
+
+    &__input {
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    width: 450px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--primary-bgc);
+    outline: 0;
+
+    @media screen and (min-width:1200px) {
+        width: 358px; 
+        margin: 0;
+    }
+}
+}
+
+.footer__list {
+   margin-top: 20px;
+   font-style: normal;
+   font-family: 'Roboto';
+
+   & .footer__item + .footer__item {
+    margin-top: 9px;
+   }
+
+   @media screen and (min-width:768px) and (max-width:1199px) {
+    padding-right: 165px;
+}
+
+   @media screen and (min-width:1200px) {
+    padding-right: 70px;
+    }
+}
+
+.social__footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+    padding-right: 93px;
+    }
+}
+
+.placeholder {
+    font-size: 16px;
+    line-height: 21.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__item {
+    
+
+    @media screen and (max-width:1200px) {
+        text-align: center;
+    align-items: center;
+        }
+}
+
+// .footer__align {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }

@@ -1,0 +1,61 @@
+.social {
+    @extend %flex; 
+
+    & .social__item + .social__item {
+        margin-left: 10px;
+    }
+    
+    &__icon {
+       width: 20px;
+       height: 20px;
+       fill: #AFB1B8;
+    }  
+
+    &__icon-footer {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-bgc);
+   }
+
+}
+
+.social__link {
+    @extend %flex; 
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;   
+    color: var(--primary-bgc);
+    
+    transition: background-color var(--transition);
+        
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+
+        &:hover .social__icon,
+        &:focus .social__icon {
+        fill: var(--primary-bgc);
+        }
+    }
+    
+     .social__link-footer {
+    @extend %flex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; 
+
+    transition: background-color var(--transition);
+    
+        &:hover,
+        &:focus {
+        background-color: var(--accent-color);
+        }
+
+        &:hover .icon-team,
+        &:focus .icon-team {
+        fill: var(--primary-bgc);
+        }
+}
+
