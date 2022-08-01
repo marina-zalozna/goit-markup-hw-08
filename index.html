@@ -62,7 +62,7 @@
                     <nav class="nav">
                     <ul class="nav__list"> 
                         <li class="nav__item">
-                            <a href="#" class="nav__link current">Студия</a>
+                            <a href="./index.html" class="nav__link current">Студия</a>
                         </li>            
                         <li class="nav__item">
                             <a href="./portfolio.html" class="nav__link">Портфолио</a>
@@ -176,7 +176,16 @@
                     <h1 class="title__menu">Наша команда</h1>
                     <ul class="team__list">
                        <li class="team__item">
-                           <img class="team__image" src="./images/Igor.jpg" alt="Игорь Демьяненко">
+                            <picture>
+                              <source srcset="./images/igormob.jpg 1x, ./images/igormob@2x.jpg 2x" 
+                              media="(max-width: 767px)" type="image/jpg">
+                              <source srcset="./images/igortab.jpg 1x, ./images/igortab@2x.jpg 2x" 
+                              media="(min-width: 768px)" type="image/jpg">
+                              <source srcset="./images/igordesc.jpg 1x, ./images/igordesc@2x.jpg 2x" 
+                              media="(min-width: 1200px)" type="image/jpg">
+                              <img srcset="./images/igordesc.jpg 450w, ./images/igordesc@2x.jpg 900w" 
+                              src="./images/igordesc.jpg"  alt="Игорь Демьяненко">  
+                            </picture>                        
                            <div class="team__thumb">
                                 <h3 class="team__title">Игорь Демьяненко</h3>
                                 <p class="team__text">Product Designer</p>
@@ -213,7 +222,16 @@
                            </div>
                         </li>
                         <li class="team__item">
-                            <img src="./images/Olga.jpg" width="270" height="260" alt="Ольга Репина">
+                            <picture>
+                                <source srcset="./images/olgamob.jpg 1x, ./images/olgamob@2x.jpg 2x" 
+                                media="(max-width: 767px)" type="image/jpg">
+                                <source srcset="./images/olgatab.jpg 1x, ./images/olgatab@2x.jpg 2x" 
+                                media="(min-width: 768px)" type="image/jpg">
+                                <source srcset="./images/olgadesc.jpg 1x, ./images/olgadesc@2x.jpg 2x" 
+                                media="(min-width: 1200px)" type="image/jpg">
+                                <img srcset="./images/olgadesc.jpg 450w, ./images/olgadesc@2x.jpg 900w" 
+                                src="./images/olgadesc.jpg"  alt="Игорь Демьяненко">  
+                              </picture> 
                             <div class="team__thumb">
                                 <h3 class="team__title">Ольга Репина</h3>
                                 <p class="team__text">Frontend Developer</p>

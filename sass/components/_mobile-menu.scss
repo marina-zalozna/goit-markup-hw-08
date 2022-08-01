@@ -1,10 +1,13 @@
 .mobile-menu {
-    position: absolute;
+    display: none;
+    position: fixed;
     padding: 48px 40px;
     width: 100%;
-    // height: 100%;
+    height: 100%;
     text-align: center;
     top: 0;
+    left: 0;
+    z-index: 9;
 
    
     background: var(--primary-bgc);
@@ -66,11 +69,6 @@
         padding-left: 0;
     }
 
-    // &__item {
-    //     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    //     transform: rotate(90deg);
-    // }
-
     &__link {
     font-weight: 500;
     font-size: 18px;
@@ -87,3 +85,7 @@
 .mobile-social__item:last-child {
     border-right: none;
 }
+
+.mobile-menu.is-open {
+    display: block;
+  }
