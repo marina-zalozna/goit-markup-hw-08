@@ -4,8 +4,8 @@
     background-color: #2F303A;
 
     @media screen and (min-width:1200px) {
-        padding-top: 0;
-    padding-bottom: 0;
+        padding-top: 60px;
+    padding-bottom: 60px;
         }
 
     &__address {
@@ -26,10 +26,11 @@
 
     &__inner {
         @media screen and (min-width:768px) {
+        
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-around;
     }
 
     @media screen and (min-width:1200px) {
@@ -40,8 +41,8 @@
     
     &__form {
     display: flex;
-    flex-direction: column;
-    }
+    flex-direction: column;}
+
 
     &-field {
         @media screen and (max-width:768px) {
@@ -50,8 +51,11 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: auto;
     }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 450px;
+    }
+
 
     @media screen and (min-width:1200px) {
         display: flex;
@@ -64,7 +68,7 @@
     &__input {
     margin-bottom: 20px;
     padding: 15px 15px;
-    width: 450px;
+    width: 100%;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -87,18 +91,16 @@
     margin-top: 9px;
    }
 
-   @media screen and (min-width:768px) and (max-width:1199px) {
-    padding-right: 165px;
-}
-
    @media screen and (min-width:1200px) {
     padding-right: 70px;
     }
 }
 
 .social__footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
 
     @media screen and (min-width:1200px) {
     padding-right: 93px;
@@ -112,16 +114,27 @@
 }
 
 .footer__item {
-    
-
     @media screen and (max-width:1200px) {
         text-align: center;
     align-items: center;
         }
 }
 
-// .footer__align {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+.footer__info {
+    text-align: center;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    
+        }
+}

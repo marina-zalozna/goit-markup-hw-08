@@ -17,19 +17,24 @@
 
     &__condition {
     position: relative;
-    display: block;
-    align-items: center;
-    text-align: center;
+    display: flex;
     margin-bottom: 30px;
     padding-left: 24px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
     }
 
     &__link {
     color: var(--accent-color);
     text-decoration: underline;
+    margin: 0;
+    padding: 0;
     }
 
     &__inner {
@@ -48,7 +53,7 @@
     
     &__icon-uncheck {
     position: absolute;
-    left: 12px;
+    left: 0;
     top: 50%;
     width: 16px;
     height: 15px;
@@ -60,7 +65,7 @@
 
     &__icon-check {
     position: absolute;
-    left: 12px;
+    left: 0;
     top: 50%;
     opacity: 0;
     width: 16px;
