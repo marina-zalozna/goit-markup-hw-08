@@ -91,7 +91,7 @@ img {
   pointer-events: none;
 }
 
-.social__link-footer, .social__link, .social, .portfolio__overlay, .portfolio__list, .feature__icon, .feature__thumb, .client__link, .button.send, .button__sub {
+.social__link-footer, .social__link, .social, .portfolio__overlay, .feature__icon, .feature__thumb, .client__link, .button.send, .button__sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,6 +378,7 @@ img {
   .feature__item {
     width: 354px;
     margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1048,7 +1049,7 @@ img {
     padding-bottom: 94px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio__list {
     margin-bottom: 40px;
     display: -webkit-box;
@@ -1056,12 +1057,12 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1086,7 +1087,6 @@ img {
 }
 .portfolio__thumb {
   position: relative;
-  height: 294px;
   overflow: hidden;
 }
 .portfolio .portfolio__title {
@@ -1384,7 +1384,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
-  width: 360px;
+  max-width: 360px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1492,7 +1492,12 @@ img {
 }
 
 .mobile-contact {
-  padding-top: 302px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-top: auto;
+  margin-bottom: 64px;
 }
 .mobile-contact__link {
   font-weight: 500;
@@ -1513,7 +1518,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 64px;
 }
 .mobile-social__item {
   padding-right: 10px;
@@ -1539,5 +1543,18 @@ img {
 }
 
 .mobile-menu.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-menu__list {
   display: block;
 }/*# sourceMappingURL=main.css.map */
