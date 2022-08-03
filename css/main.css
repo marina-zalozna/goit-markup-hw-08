@@ -1384,7 +1384,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
-  max-width: 360px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1395,6 +1394,11 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
