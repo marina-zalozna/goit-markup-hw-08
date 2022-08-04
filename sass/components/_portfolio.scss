@@ -9,22 +9,17 @@
     }
     
     &__list {
-
-    @media screen and (max-width:767px) {
-        margin-bottom: 40px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
-    }
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width:1200px) {
-        margin-bottom: 50px;
-    }
+        margin-bottom: 40px;
+      
+        @media screen and (min-width: 768px) {
+          justify-content: center;
+          margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 50px;
+        }
     }
     
     &__offers {
